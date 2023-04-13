@@ -1,14 +1,17 @@
 import React from "react";
 import './style.css';
+import MovieList from "./components/MovieList";
+import { Outlet } from "react-router-dom";
 
 const Movies = () => {
     return (
         <>
-        <div class="movies">
+        <div className="movies">
         <h1>Movies</h1>
 
-        <div class="movies-container">
-
+        <div className="movies-container">
+          <MovieList />
+          <Outlet />
 
         </div>
       </div>
